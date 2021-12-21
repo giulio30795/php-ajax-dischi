@@ -21,23 +21,24 @@ include '../data/database.php';
     <title>Document</title>
 </head>
 <body>
-    <header>
-        Header
-    </header>
+<header class="d-flex justify-content-center align-items-center">
+            <img class="logo m-2" src="../assets/logo.png" alt="">
+            <h1>Esercizio Dischi PHP-AJAX</h1>
+        </header>
 
-    <main>
-        <div class="container">
-            <div class="row">
+    <main class="pt-5">
+        <div class="container justify-content-center px-5">
+            <div class="row justify-content-center">
                 
             <?php
             foreach ($database as $element) { ?>
-                <div class="col-3 mx-3">
-                    <div class="img-container p-2">
+                <div class="col-3 mx-4 my-3 card-container text-center">
+                    <div class="img-container p-2 mt-2 px-0">
                         <img src=" <?php echo $element['poster'] ?> " alt="">
                     </div>
 
-                    <div class="text-container text-center">
-                        <h4> <?php echo $element['title'] ?> </h4>
+                    <div class="text-container text-center my-3">
+                        <h5> <?php echo $element['title'] ?> </h5>
                         <div> <?php echo $element['author'] ?></div>
                         <div> <?php echo $element['year'] ?></div>
                         <div> <?php echo $element['genre'] ?></div>

@@ -2,7 +2,7 @@ new Vue({
     el: "#app",
 
     data: {
-        database: [],
+        dischi: null,
     },
 
     created() {
@@ -13,12 +13,10 @@ new Vue({
         getData() {
             axios
                 .get("http://localhost:8888/php-ajax-dischi/Esercizio-AJAX/database2.php")
-                .then(function (response) {
-                    this.database = response.data
-                    console.log(response.data);
+                .then( response => {
+                    this.dischi = response.data;
                 })
-                .catch(function (error) {
-                    // handle error
+                .catch(error => {
                     console.log(error);
                 })
         },

@@ -1,13 +1,13 @@
-img{
+img {
     width: 200px;
-    max-width:100%;
+    max-width: 100%;
 }
 
-.logo{
-    width:50px;
+.logo {
+    width: 50px;
 }
 
-header{
+header {
     background-color: #132431;
     color: white;
     height: 100px;
@@ -18,10 +18,10 @@ main {
     height: calc(100vh - 100px);
 }
 
-.card-container{
+.card-container {
     background-color: black;
 }
 
-.text-container{
-    color:white
+.text-container {
+    color: white;
 }

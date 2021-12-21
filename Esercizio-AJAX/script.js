@@ -12,13 +12,15 @@ new Vue({
     methods: {
         getData() {
             axios
-                .get("http://localhost:8888/php-ajax-dischi/Esercizio-AJAX/database2.php")
-                .then( response => {
+                .get(
+                    "http://localhost:8888/php-ajax-dischi/Esercizio-AJAX/database2.php"
+                )
+                .then((response) => {
                     this.dischi = response.data;
                 })
-                .catch(error => {
+                .catch((error) => {
                     console.log(error);
-                })
+                });
         },
     },
 });
